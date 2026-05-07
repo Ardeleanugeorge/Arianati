@@ -46,9 +46,7 @@ const imageFiles = [
 const galleryGrid = document.getElementById("gallery-grid");
 
 if (galleryGrid) {
-  const selectedPhotos = imageFiles.slice(0, 18);
-
-  selectedPhotos.forEach((fileName, index) => {
+  imageFiles.forEach((fileName, index) => {
     const item = document.createElement("div");
     item.className = "gallery-item";
 
